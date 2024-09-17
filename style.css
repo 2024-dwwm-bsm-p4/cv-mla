@@ -23,7 +23,8 @@ header {
 gi}
 
 hr{
-  margin-top: 4%;
+  margin-top: 30px;
+
 }
 
 section{
@@ -135,6 +136,10 @@ section{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+h4{
+  margin-top: 30px;
 }
 
 .formations {
@@ -283,14 +288,16 @@ p {
   align-items: center;
   justify-content: space-between;
   background-color: #214962;
-  .address{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-left: auto;
-    flex-direction: column;
-    margin-right: auto;
-  }
+
+}
+
+.address{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-left: auto;
+  flex-direction: column;
+  margin-right: auto;
 }
 
 img {
