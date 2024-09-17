@@ -1,5 +1,5 @@
 * {
-  padding: 0px;
+  /* padding: 0px; */
   margin: 0;
   box-sizing: border-box;
 }
@@ -8,7 +8,6 @@ body {
   color: #4b4b4b !important;
   background-color: #2f3143;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
   width: 100%;
   background-image: url("assets/vecteezy_abstract-futuristic-with-connection-lines-on-blue_22874469_385.jpg");
   background-size: cover;
@@ -132,9 +131,6 @@ section{
 }
 
 .experience {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
