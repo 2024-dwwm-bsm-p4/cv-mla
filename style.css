@@ -9,7 +9,7 @@ body {
   background-color: #2f3143;
   font-family: "Roboto", sans-serif;
   width: 100%;
-  background-image: url("assets/vecteezy_abstract-futuristic-with-connection-lines-on-blue_22874469_385.jpg");
+  background-image: url("assets/vecteezy_abstract-futuristic-with-connection-lines-on-blue_22874469_385.webp");
   background-size: cover;
   background-attachment: fixed;
   background-position: 0 center;
@@ -229,6 +229,7 @@ p.badge {
   font-weight: 500;
   border-radius: 0px;
   padding: 0 4px 0 4px;
+  
 }
 
 ul {
