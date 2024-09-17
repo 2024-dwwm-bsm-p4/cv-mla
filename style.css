@@ -137,7 +137,7 @@ section{
   align-items: center;
 }
 
-.DiplomesEtFformations {
+.formations {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -162,7 +162,7 @@ h2 {
   margin-top: 25px;
 }
 
-h2#Diplômes{
+h2#form{
   color: #ffffff;
 }
 
@@ -203,7 +203,7 @@ h2#Diplômes{
   }
 
 
-.titre {
+.title {
   font-size: x-large;
   justify-content: space-around;
   margin: 0 auto;
@@ -241,7 +241,7 @@ li {
   margin: 1.5%;
 }
 
-.intitule {
+.titled{
   width: 66%;
   display: flex;
   justify-content: space-between;
@@ -269,9 +269,9 @@ p {
   font-size: xx-large;
 }
 
-.Présentation {
+/* .Présentation {
   text-align: center;
-}
+} */
 
 #footer {
   height: 80vh;
@@ -285,7 +285,7 @@ p {
   background-color: #214962;
 }
 
-.adresse {
+.address{
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
