@@ -1,40 +1,33 @@
-const btnToggle = document.querySelector ('.btnToggle')
+const btnToggle = document.querySelector(".btnToggle");
 
-btnToggle.addEventListener('click' , () => {
+btnToggle.addEventListener("click", () => {
+  const card = document.querySelectorAll(".card");
+  const badges = document.querySelectorAll(".badge");
 
-    const card = document.querySelectorAll ('.card');
-    const badges = document.querySelectorAll('.badge');
-    
+  card.forEach((card) => {
+    if (card.classList.contains("dark")) {
+      card.classList.remove("dark");
+      card.classList.add("light");
+      btnToggle.innerHTML = "Go dark";
+    } else {
+      card.classList.add("dark");
+      card.classList.remove("light");
+      btnToggle.innerHTML = "Go light";
+    }
+  });
 
-    card.forEach((card) => {
-        if (card.classList.contains('dark')) {
-    
-            
-            card.classList.remove('dark')
-            card.classList.add('light')
-            btnToggle.innerHTML = "Go dark"
-    
-        }  else {
-            
-            card.classList.add('dark')
-            card.classList.remove('light')
-            btnToggle.innerHTML = "Go light"
-    
-        }
-    
-    });
-   
+  badges.forEach((badge) => {
+    if (badge.classList.contains("dark")) {
+      badge.classList.remove("dark");
+      badge.classList.add("light");
+    } else {
+      badge.classList.add("dark");
+      badge.classList.remove("light");
+    }
+  });
+});
 
-    badges.forEach((badge) => {
-        if (badge.classList.contains('dark')) {
-            badge.classList.remove('dark');
-            badge.classList.add('light');
-        } else {
-            badge.classList.add('dark');
-            badge.classList.remove('light');
-        }
-    });
-
-})
-    
-    
+const lazyScript = document.createElement('script');
+lazyScript.src = 'path/to/your/script.js';
+lazyScript.async = true;
+document.body.appendChild(lazyScript);
