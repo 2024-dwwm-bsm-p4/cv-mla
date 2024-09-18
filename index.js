@@ -27,7 +27,3 @@ btnToggle.addEventListener("click", () => {
   });
 });
 
-const lazyScript = document.createElement('script');
-lazyScript.src = 'path/to/your/script.js';
-lazyScript.async = true;
-document.body.appendChild(lazyScript);
