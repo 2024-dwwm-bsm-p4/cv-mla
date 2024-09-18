@@ -20,7 +20,25 @@ body {
 header {
   width: auto;
   background-color: F2F2F2;
-gi}
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-weight: 100;
+  font-size: 25px;
+}
+
+.onglets a{
+  margin-right:50px;
+  padding: 16px;
+  margin-bottom: 60px;
+  color: #f0f9ff;
+  display: table-cell;
+}
 
 hr{
   margin-top: 30px;
@@ -348,7 +366,7 @@ img {
   }
 
   #name {
-    margin-top: 150px;
+    margin-top: 50px;
   }
 
   .card {
@@ -373,7 +391,7 @@ img {
   }
 
   #name {
-    margin-top: 150px;
+    margin-top: 45px;
   }
 
   .card {
@@ -414,3 +432,6 @@ img {
   }
 
 }
+
+
+
