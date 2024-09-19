@@ -284,11 +284,9 @@ a {
   color: #ffffff; 
 }
 
-#footer {
-  height: 40vh;
-  padding: 50px 0;
+/* #footer {
+  padding: 20px;
   color: #f0f9ff;
-  margin-bottom: 45px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -296,18 +294,119 @@ a {
 
 }
 
-ul.info{
-  margin-right: 50px;
-  margin-left: 50px;
-  padding: 10px;
+#contact{
+margin: 0;
+font-size: 24px;
+margin-bottom: 20px; 
+text-align: center;
 }
 
-.link{
-  margin-right: 50px;
-  margin-left: 50px;
-  padding: 10px;
-  font-size: xx-large;
+#cont{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+.address {
+  display: flex;
+  justify-content: space-between; 
+  max-width: 1200px; 
+  margin-bottom: 20px; 
+}
+
+.info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1; /*prend tout l'espace disponible à gauche */
+}
+
+/* .info li {
+  margin-bottom: 10px; 
+}
+
+.link {
+  text-align: right; 
+} */ 
+
+
+#footer {
+  padding: 20px 0; 
+  width: 100%; 
+}
+
+.footer-container {
+  width: 100%;
+  margin: 0 auto; 
+  padding: 0 20px; 
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-color: #214962;
+  flex: 1;
+
+}
+
+#contact {
+  margin-bottom: 20px; 
+}
+
+/* .footer-content {
+  flex-direction: column;
+    align-items: flex-start;
+  } */
+  /* display: flex;
+  justify-content: space-between; /* Espace entre les colonnes */
+  /* width: 100%;
+  flex-wrap: wrap; Permet aux éléments de passer à la ligne suivante sur les petits écrans 
+} */
+
+.address {
+  flex: 1; 
+  margin-right: 20px; 
+}
+
+.address .info {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.address .info li {
+  margin-bottom: 10px; 
+}
+
+.link {
+  /* flex: 1;  */
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.link h3 {
+  margin-bottom: 10px; 
+  text-align: center;
+}
+
+.link a {
+  margin-right: 15px; 
+  font-size: 40px; 
+  color: #ffffff; 
+  text-decoration: none; 
+}
+
+.icon{
+  text-align: center;
+}
+
+#mention{
+  color: #ffffff;
+  font-size: small;
+  text-align: center;
+  margin-top: 0;
+}
+
 @media only screen and (max-width: 768px) {
   body {
     font-size: 18px;
@@ -359,6 +458,10 @@ ul.info{
     -ms-transform: scale(1.5);
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
+  }
+
+  .link a:hover {
+    color: #75d5e2; 
   }
   
   .btnToggle {
