@@ -20,3 +20,7 @@ btnToggle.addEventListener("click", () => {
     btnToggle.innerHTML = "Go dark";
   }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+  AOS.init();
+});
