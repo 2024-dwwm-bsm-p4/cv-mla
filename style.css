@@ -85,17 +85,47 @@ hr{
 
 }
 
-section{
-  justify-content: center;
+section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
+  padding: 20px; 
 }
 
-.Section {
-  margin-left: 50px;
-  margin-right: 65px;
+.sections-container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+}
+
+.section {
+  width: 100%; 
+  margin: 10px 0; 
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#Skills, #Interests {
+  text-align: center;
+}
+
+ul.Skills, ul.interests {
+  list-style: none;
+  padding: 0;
+}
+
+ul.Skills li, ul.interests li {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  margin-bottom: 10px;
+}
+
+ul.Skills li i, ul.interests li i {
+  margin-right: 10px;
+  font-size: 1.2em;
 }
 
 .btnToggle {
@@ -131,14 +161,13 @@ section{
   text-shadow: 1px 3px 8px rgba(0, 0, 0, 0.8);
 }
 
-
-
-
 .experience {
-  justify-content: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%; 
+  margin: 0 auto; 
+  padding: 20px; 
 }
 
 h4{
@@ -149,6 +178,9 @@ h4{
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%; 
+  margin: 0 auto; 
+  padding: 20px; 
 }
 
 h1 {
@@ -196,15 +228,13 @@ h2#form{
 }
 
 .card {
-  padding: 16px;
-  margin-bottom: 60px;
-  background-color: rgba(255, 255, 255, 0.88);
-  border-bottom: 1px solid #6b728000;
-  border-top: 1px solid #6b7280;
-  border-radius: 20px;
-  /* opacity: 0.88 ; */
-  width: 80%;
-  transition: background-color 0.5s ease, color 0.5s ease;
+  width: 100%; 
+  max-width: 80%;
+  margin: 10px auto; 
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .card.dark {
@@ -225,7 +255,16 @@ h2#form{
     transition: background-color 0.5s ease, color 0.5s ease;
   }
   
-
+  .section {
+    background-color: #f9f9f9; /* Couleur de fond en mode clair */
+    color: #000; /* Couleur du texte en mode clair */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Transition fluide */
+  }
+  
+  .section.dark {
+    background-color: #2d3748; /* Couleur de fond en mode sombre */
+    color: #f5f0f0; /* Couleur du texte en mode sombre */
+  }
 
 .title {
   font-size: x-large;
@@ -284,51 +323,6 @@ a {
   color: #ffffff; 
 }
 
-/* #footer {
-  padding: 20px;
-  color: #f0f9ff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  background-color: #214962;
-
-}
-
-#contact{
-margin: 0;
-font-size: 24px;
-margin-bottom: 20px; 
-text-align: center;
-}
-
-#cont{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.address {
-  display: flex;
-  justify-content: space-between; 
-  max-width: 1200px; 
-  margin-bottom: 20px; 
-}
-
-.info {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  flex: 1; /*prend tout l'espace disponible à gauche */
-}
-
-/* .info li {
-  margin-bottom: 10px; 
-}
-
-.link {
-  text-align: right; 
-} */ 
-
 
 #footer {
   padding: 20px 0; 
@@ -343,7 +337,7 @@ text-align: center;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  background-color: #214962;
+  background-color: #71a3c1;
   flex: 1;
 
 }
@@ -351,16 +345,6 @@ text-align: center;
 #contact {
   margin-bottom: 20px; 
 }
-
-/* .footer-content {
-  flex-direction: column;
-    align-items: flex-start;
-  } */
-  /* display: flex;
-  justify-content: space-between; /* Espace entre les colonnes */
-  /* width: 100%;
-  flex-wrap: wrap; Permet aux éléments de passer à la ligne suivante sur les petits écrans 
-} */
 
 .address {
   flex: 1; 
@@ -378,7 +362,6 @@ text-align: center;
 }
 
 .link {
-  /* flex: 1;  */
   text-align: center;
   margin-top: 40px;
   margin-bottom: 30px;
@@ -406,6 +389,20 @@ text-align: center;
   text-align: center;
   margin-top: 0;
 }
+
+@media (min-width: 768px) {
+  .sections-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px; 
+  }
+
+  .Section {
+    width: 45%; 
+    margin: 0;
+  }
+}
+
 
 @media only screen and (max-width: 768px) {
   body {
@@ -500,4 +497,22 @@ text-align: center;
 }
 
 
+@media (min-width: 1024px) {
+  .sections-container {
+    flex-direction: column; 
+    align-items: center;
+    width: 100%; 
+  }
+
+  .Section {
+    width: 100%; 
+    margin: 20px 0; 
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column; 
+    width: 100%; 
+  }
+}
 
