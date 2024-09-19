@@ -1,4 +1,5 @@
 * {
+  scroll-behavior: smooth;
   padding: 0px;
   margin: 0;
   box-sizing: border-box;
@@ -21,6 +22,45 @@ header {
   width: auto;
   background-color: F2F2F2;
 }
+
+
+#name {
+  animation: slideright 3s ease forwards;
+  font-size: 3rem; 
+}
+
+@keyframes slideright {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
+  to {
+    margin-right: 0%; 
+    width: 100%;
+  }
+}
+
+
+#welcome {
+  animation: slideleft 3s ease forwards;
+  line-height: 1.2;
+  font-size: 25px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+@keyframes slideleft {
+  from {
+    margin-left: -200%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%; 
+    width: 100%;
+  }
+}
+
 
 nav{
   display: flex;
@@ -91,68 +131,8 @@ section{
   text-shadow: 1px 3px 8px rgba(0, 0, 0, 0.8);
 }
 
-#name {
-  animation-duration: 3s;
-  animation-name: slidein;
-}
 
-@keyframes slidein {
-  from {
-    margin-left: 100%;
-    width: 300%;
-  }
 
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-
-  75% {
-    font-size: 300%;
-    margin-left: 25%;
-    width: 150%;
-  }
-}
-
-#name {
-  animation-duration: 3s;
-  animation-name: slideright;
-}
-
-@keyframes slideright {
-  from {
-    margin-right: 100%;
-    width: 300%;
-  }
-
-  to {
-    margin-right: 0%;
-    width: 100%;
-  }
-}
-
-#welcome {
-  animation-duration: 3s;
-  animation-name: slideleft;
-  line-height: 1.2;
-  font-size: 25px;
-  margin-top: -20px;
-  margin-bottom: 20px;
-  text-decoration: underline;
-
-}
-
-@keyframes slideleft {
-  from {
-    margin-left: -200%;
-    width: 300%;
-  }
-
-  to {
-    margin-left: 0%;
-    width: 100%;
-  }
-}
 
 .experience {
   justify-content: center;
