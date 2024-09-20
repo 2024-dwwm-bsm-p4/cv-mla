@@ -8,7 +8,7 @@
 body {
   color: #000000 !important;
   background-color: #2f3143;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif; 
   width: 100%;
   background-image: url("assets/vecteezy_abstract-futuristic-with-connection-lines-on-blue_22874469_385.webp");
   background-size: cover;
@@ -132,13 +132,12 @@ ul.Skills li i, ul.interests li i {
   position: fixed;
   text-align: center;
   font-size: medium;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family:Arial, Helvetica, sans-serif;
   top: 10px;
   right: 10px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  width: 75px;
+  height: 60px;
+  border-radius: 12px;
   background: #d8e7e7;
   opacity: 0.9;
   border: 1px solid #000000;
@@ -146,7 +145,54 @@ ul.Skills li i, ul.interests li i {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  z-index: 1000;
+  /* z-index: 3000; */
+  padding: 0 15px;
+}
+
+.btnToggle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #333;
+  z-index: -1;
+  transition: width 0.5s ease; 
+}
+
+.btnToggle:hover::before{
+  width: 100%;
+
+}
+
+.btnToggle:hover{
+  color: #d8e7e7;
+}
+
+.btnToggle.dark{
+  background: #333;
+  color: #d8e7e7;
+
+}
+
+.btnToggle.dark::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 1px;
+  background-color: #d8e7e7;
+  z-index: -1;
+  transition: width 0.5s ease; 
+}
+
+.btnToggle.dark:hover::before{
+  width: 100%;
+
+}
+
+.btnToggle.dark:hover{
+  color: #333;
 }
 
 .container {
@@ -339,7 +385,6 @@ a {
   align-items: center;
   background-color: #71a3c1;
   flex: 1;
-
 }
 
 #contact {
@@ -451,17 +496,21 @@ a {
     margin: auto;
   }
 
-  img:hover {
+  .link a:hover {
     -ms-transform: scale(1.5);
     -webkit-transform: scale(1.5);
     transform: scale(1.5);
   }
 
   .link a:hover {
+    -ms-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+
     color: #75d5e2; 
   }
   
-  .btnToggle {
+  /* .btnToggle {
     position: fixed;
     text-align: center;
     font-size: medium;
@@ -474,14 +523,14 @@ a {
     border-radius: 50%;
     background: #d8e7e7;
     /*! color: #1a5074; */
-    opacity: 0.9;
+    /* opacity: 0.9;
     border: 1px solid #1b1a1a;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     z-index: 3000;
-  }
+  } */ 
 
   .Skills {
     display: flex;
